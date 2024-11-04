@@ -1,0 +1,38 @@
+<!DOCTYPE html><html ondragstart="return false">
+    <link rel="icon" type="image/x-icon" href="icon.svg">
+    <title>Pc</title>
+<body>
+    <style>
+        * {
+            background-repeat: repeat-x;
+            background-size: 100%;
+        }
+        
+        body {
+        background-image: url(back.jpeg);
+        }
+        
+        button {
+            height:75px;
+            width:75px;
+            border-radius:50%;
+            background-position: center;
+        }
+
+        games {
+            width:100%;
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+        }
+    </style>
+    <div class="games">
+    <button style="background-image:url(steam.png);"onclick="window.open('https://store.steampowered.com/')"></button>
+    <button style="background-image:url(epic.png);"onclick="window.open('https://www.epicgames.com/site/en-US/home')"></button>
+    <button style="background-image:url(gog.png);"onclick="window.open('https://www.gog.com/galaxy')"></button>
+    <button style="background-image:url(flathub.png);"onclick="window.open('https://flathub.org/')"></button>
+    </div>
+    
+    
+</body>
