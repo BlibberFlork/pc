@@ -25,11 +25,13 @@
 	        overflow: hidden;
         }
 
-        button {
+        a {
             height:75px;
             width:75px;
             border-radius:50%; 
             background-position: center;
+            background-color: white;
+            border:2px solid black;
         }
 
         .games {
@@ -41,7 +43,7 @@
             align-items:center;
             top: 5%; 
         }
-        .games button {
+        .games a {
             margin-left: 20px;
             margin-right: 20px;
             background-size: 100% 100%; 
@@ -58,7 +60,7 @@
             
         }
 
-        .row button {
+        .row a {
             background-size: 100% 100%; 
             background-repeat:no-repeat;   
         }
@@ -74,7 +76,7 @@
             
         }
 
-        .row2 button {
+        .row2 a {
             background-size: 100% 100%; 
             background-repeat: no-no-repeat;   
         }
@@ -90,7 +92,7 @@
             
         }
 
-        .row3 button {
+        .row3 a {
             background-size: 100% 100%; 
             background-repeat:no-repeat;  
         }
@@ -106,7 +108,7 @@
             
         }
 
-        .exten button {
+        .exten a {
             background-size: 80% 80%; 
             background-repeat: no-repeat;   
         }
@@ -122,55 +124,59 @@
             
         }
 
-        .ven button {
+        .ven a {
             background-size: 100% 90%;    
         }
+
+       
+        .ton:hover { 
+            border:2px solid rgb(75, 75, 75); }
 
     </style>
 
     <div class="games">
-        <button target="_blank" style="background-image:url(steam.png);" href="https://store.steampowered.com/"></button>
-        <button target="_blank" style="background-image:url(epic.png); background-size: 150%;" href="https://www.epicgames.com/site/en-US/home"></button>
-        <button target="_blank" style="background-image:url(gog.png); background-size: 120%;" href="https://www.gog.com/galaxy"></button>
-        <button target="_blank" style="background-image:url(flathub.png);" href="https://flathub.org/"></button>
+        <a class="ton" target="_blank" style="background-image:url(steam.png);" href="https://store.steampowered.com/"></a>
+        <a class="ton" target="_blank" style="background-image:url(epic.png); background-size: 150%;" href="https://www.epicgames.com/site/en-US/home"></a>
+        <a class="ton" target="_blank" style="background-image:url(gog.png); background-size: 120%;" href="https://www.gog.com/galaxy"></a>
+        <a class="ton" target="_blank" style="background-image:url(flathub.png);" href="https://flathub.org/"></a>
     </div>
 
     <div class="row">
-        <button target="_blank" style="background-image:url(altstore.jpg);" href="https://altstore.io/"></button>
-        <button target="_blank" style="background-image:url(retro.png); background-size: 200% 200%;" href="https://www.retroarch.com/"></button>
-        <button target="_blank" style="background-image:url(superf4.jpg); background-size: 90% 100%;" href="https://stefansundin.github.io/superf4/"></button>
-        <button target="_blank" style="background-image:url(everything.png); background-size: 80% 80%;" href="https://www.voidtools.com/"></button>
-        <button target="_blank" style="background-image:url(displayfusion.webp); background-size: 200% 200%;" href="https://www.displayfusion.com/"></button>
-        <button target="_blank" style="background-image:url(joytokey.png);" href="https://joytokey.net/en/"></button>
+        <a class="ton" target="_blank" style="background-image:url(altstore.jpg);" href="https://altstore.io/"></a>
+        <a class="ton" target="_blank" style="background-image:url(retro.png); background-size: 200% 200%;" href="https://www.retroarch.com/"></a>
+        <a class="ton" target="_blank" style="background-image:url(superf4.jpg); background-size: 90% 100%;" href="https://stefansundin.github.io/superf4/"></a>
+        <a class="ton" target="_blank" style="background-image:url(everything.png); background-size: 80% 80%;" href="https://www.voidtools.com/"></a>
+        <a class="ton" target="_blank" style="background-image:url(displayfusion.webp); background-size: 200% 200%;" href="https://www.displayfusion.com/"></a>
+        <a class="ton" target="_blank" style="background-image:url(joytokey.png);" href="https://joytokey.net/en/"></a>
     </div>
     <div class="row2">
-        <button target="_blank" style="background-image:url(downloadmanager.png);" href="https://www.freedownloadmanager.org/"></button>
-        <button target="_blank" style="background-image:url(borderlessgaming.webp);" href="https://github.com/Codeusa/Borderless-Gaming/releases"></button>
-        <button target="_blank" style="background-image:url(flux.jpg);" href="https://justgetflux.com/"></button>
-        <button target="_blank" style="background-image:url(rainmeter.png);" href="https://www.rainmeter.net/"></button>
-        <button target="_blank" style="background-image:url(ninite.png);" href="https://ninite.com/"></button>
-        <button target="_blank" style="background-image:url(Krisp.jpg);" href="https://krisp.ai/"></button>
+        <a class="ton" target="_blank" style="background-image:url(downloadmanager.png);" href="https://www.freedownloadmanager.org/"></a>
+        <a class="ton" target="_blank" style="background-image:url(borderlessgaming.webp);" href="https://github.com/Codeusa/Borderless-Gaming/releases"></a>
+        <a class="ton" target="_blank" style="background-image:url(flux.jpg);" href="https://justgetflux.com/"></a>
+        <a class="ton" target="_blank" style="background-image:url(rainmeter.png);" href="https://www.rainmeter.net/"></a>
+        <a class="ton" target="_blank" style="background-image:url(ninite.png);" href="https://ninite.com/"></a>
+        <a class="ton" target="_blank" style="background-image:url(Krisp.jpg);" href="https://krisp.ai/"></a>
     </div>
     <div class="row3">
-        <button target="_blank" style="background-image:url(overwolf.png); background-size: 250% 200%;" href="https://www.overwolf.com/"></button>
-        <button target="_blank" style="background-image:url(obs.png); background-size: 225% 150%;" href="https://obsproject.com/"></button>
-        <button target="_blank" style="background-image:url(logitech.jpg); background-size: 175% 100%;" href="https://www.logitechg.com/en-us"></button>
-        <button target="_blank" style="background-image:url(steelGG.png); background-size: 90% 100%;" href="https://steelseries.com/"></button>
-        <button target="_blank" style="background-image:url(proton.png);" href="https://protonvpn.com/"></button>
-        <button target="_blank" style="background-image:url(lightshot.png);" href="https://app.prntscr.com/en/index.html"></button>
+        <a class="ton" target="_blank" style="background-image:url(overwolf.png); background-size: 250% 200%;" href="https://www.overwolf.com/"></a>
+        <a class="ton" target="_blank" style="background-image:url(obs.png); background-size: 225% 150%;" href="https://obsproject.com/"></a>
+        <a class="ton" target="_blank" style="background-image:url(logitech.jpg); background-size: 175% 100%;" href="https://www.logitechg.com/en-us"></a>
+        <a class="ton" target="_blank" style="background-image:url(steelGG.png); background-size: 90% 100%;" href="https://steelseries.com/"></a>
+        <a class="ton" target="_blank" style="background-image:url(proton.png);" href="https://protonvpn.com/"></a>
+        <a class="ton" target="_blank" style="background-image:url(lightshot.png);" href="https://app.prntscr.com/en/index.html"></a>
     </div>
     <div class="exten">
-        <button target="_blank" style="background-image:url(adgaurd.png);" href="https://adguard.com/en/welcome.html"></button>
-        <button target="_blank" style="background-image:url(ublock.png);" href="https://ublockorigin.com/"></button>
-        <button target="_blank" style="background-image:url(tamper.png);" href="https://www.tampermonkey.net/"></button>
-        <button target="_blank" style="background-image:url(youtubenhan.png);" href="https://www.mrfdev.com/enhancer-for-youtube"></button>
-        <button target="_blank" style="background-image:url(volume.png);" href="https://www.petasittek.com/"></button>
-        <button target="_blank" style="background-image:url(colorzilla.png);" href="https://www.colorzilla.com/"></button>
+        <a class="ton" target="_blank" style="background-image:url(adgaurd.png);" href="https://adguard.com/en/welcome.html"></a>
+        <a class="ton" target="_blank" style="background-image:url(ublock.png);" href="https://ublockorigin.com/"></a>
+        <a class="ton" target="_blank" style="background-image:url(tamper.png);" href="https://www.tampermonkey.net/"></a>
+        <a class="ton" target="_blank" style="background-image:url(youtubenhan.png);" href="https://www.mrfdev.com/enhancer-for-youtube"></a>
+        <a class="ton" target="_blank" style="background-image:url(volume.png);" href="https://www.petasittek.com/"></a>
+        <a class="ton" target="_blank" style="background-image:url(colorzilla.png);" href="https://www.colorzilla.com/"></a>
     </div>
     <div class="ven">
-        <button target="_blank" style="background-image:url(vencord.png);" href="https://vencord.dev/"></button>
-        <button target="_blank" style="background-image:url(browser.png); "onclick="popup()"></button>
-        <button target="_blank" style="background-image:url(visualstudio.jpg);" href="https://code.visualstudio.com/"></button>
+        <a class="ton" target="_blank" style="background-image:url(vencord.png);" href="https://vencord.dev/"></a>
+        <a class="ton" target="_blank" style="background-image:url(browser.png); "onclick="popup()"></a>
+        <a class="ton" target="_blank" style="background-image:url(visualstudio.jpg);" href="https://code.visualstudio.com/"></a>
     </div>
     
 </body>
