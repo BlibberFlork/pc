@@ -2,6 +2,14 @@
     <link rel="icon" type="image/x-icon" href="icon.svg">
     <title>Pc</title>
 <body>
+    <script>
+         document.addEventListener('keydown', function(event) {
+            if (event.key === 'Backspace') {
+                event.preventDefault();
+                window.location.href = 'https://tezz-1.github.io/warframe/';  
+            }
+        });
+    </script>
     <style>
         * {
             cursor: url('RedGlow.cur'), auto;
