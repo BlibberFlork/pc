@@ -158,7 +158,7 @@
     </div>
 
     <div class="row">
-        <a class="ton" target="_blank" style="background-image:url(flathub.png);" href="https://flathub.org/"></a>
+        <a class="ton" target="_blank" style="background-image:url(autohotkey.webp);" href="https://www.autohotkey.com/"></a>
         <a class="ton" target="_blank" style="background-image:url(superf4.jpg); background-size: 80%;" href="https://stefansundin.github.io/superf4/"></a>
         <a class="ton" target="_blank" style="background-image:url(pin.png);background-size: 80%;" href="https://github.com/thewhitegrizzli/DeskPins/releases"></a>
         <a class="ton" target="_blank" style="background-image:url(GIMP.svg);background-size: 80%;" href="https://www.gimp.org/downloads/"></a>
@@ -182,8 +182,8 @@
         <a class="ton" target="_blank" style="background-image:url(lightshot.png);" href="https://app.prntscr.com/en/index.html"></a>
     </div>
     <div class="ven">
-        <a class="ton" target="_blank" style="background-image:url();" href=""></a>
-        <a class="ton" target="_blank" style="background-image:url();" href=""></a>
+        <a class="ton" target="_blank" style="background-image:url(winaero.png);" href="https://winaerotweaker.com/"></a>
+        <a class="ton" target="_blank" style="background-image:url(StartAllBack.jpg);" href="https://www.startallback.com/"></a>
         <a class="ton" target="_blank" style="background-image:url(vencord.png);" href="https://vencord.dev/"></a>
         <a class="ton" target="_blank" style="background-image:url(visualstudio.jpg);" href="https://code.visualstudio.com/"></a>
         <a class="ton" target="_blank" style="background-image:url(virtualbox.svg);background-size: 75%" href="https://www.virtualbox.org/"></a>
@@ -194,7 +194,14 @@
                 function popupV() { var popupV = document.getElementById('popupV'); if (popupV.style.display === 'none' || popupV.style.display === '') { popupV.style.display = 'block'; } else { popupV.style.display = 'none'; } }
                 function popupF() { var popupF = document.getElementById('popupF'); if (popupF.style.display === 'none' || popupF.style.display === '') { popupF.style.display = 'block'; } else { popupF.style.display = 'none'; } }
                 function popupE() { var popupE = document.getElementById('popupE'); if (popupE.style.display === 'none' || popupE.style.display === '') { popupE.style.display = 'block'; } else { popupE.style.display = 'none'; } }
-            </script>
+
+	document.addEventListener("keypress", function(map) {
+  if (map.key === "L") {
+    window.open("https://flathub.org/", "_blank");
+  }
+});
+		    
+	    </script>
 
     <style>
         #popupB {
