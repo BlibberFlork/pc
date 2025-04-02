@@ -4,6 +4,7 @@
 <body><div class="info" style="position: absolute;text-align: right;line-height: .5%;font-size: 10px;width: 99.4%">
 
     <p>Backspace=NextSite</p>
+    <p>WindowsActivation=M</p>
     
   
   </div>
@@ -14,8 +15,13 @@
                 window.location.href = 'https://blibberflork.github.io/game/';  
             }
         });
+	    document.addEventListener("keypress", function(map) {
+  if (map.key === "m" || map.key === "M") {
+    window.open("https://massgrave.dev/", "_blank");
+  }
+});
     </script>
-	<a class="ton" target="_blank" style="background-image:url(portable.png); right:5%;bottem:5%;" href="https://portableapps.com/";></a>
+	<a class="ton" target="_blank" style="background-image:url(portable.png); position:absolute;right:5%;bottem:5%;" href="https://portableapps.com/";></a>
     <style>
 	      .info {
   color: #96ceb4;
