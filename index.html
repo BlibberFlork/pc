@@ -173,6 +173,7 @@
         <a class="ton" target="_blank" style="background-image:url(file.png);" onclick="popupF()"></a>
         <a class="ton" target="_blank" style="background-image:url(browser.png);" onclick="popupB()"></a>
         <a class="ton" target="_blank" style="background-image:url(vpanti.webp);" onclick="popupV()"></a>
+	<a class="ton" target="_blank" style="background-image:url(emul.png);" onclick="popupU()"></a>
     </div>
 
     <div class="row">
@@ -213,7 +214,8 @@
                 function popupB() { var popupB = document.getElementById('popupB'); if (popupB.style.display === 'none' || popupB.style.display === '') { popupB.style.display = 'block'; } else { popupB.style.display = 'none'; } }
                 function popupV() { var popupV = document.getElementById('popupV'); if (popupV.style.display === 'none' || popupV.style.display === '') { popupV.style.display = 'block'; } else { popupV.style.display = 'none'; } }
                 function popupF() { var popupF = document.getElementById('popupF'); if (popupF.style.display === 'none' || popupF.style.display === '') { popupF.style.display = 'block'; } else { popupF.style.display = 'none'; } }
-                function popupE() { var popupE = document.getElementById('popupE'); if (popupE.style.display === 'none' || popupE.style.display === '') { popupE.style.display = 'block'; } else { popupE.style.display = 'none'; } }	    
+                function popupE() { var popupE = document.getElementById('popupE'); if (popupE.style.display === 'none' || popupE.style.display === '') { popupE.style.display = 'block'; } else { popupE.style.display = 'none'; } }
+		function popupU() { var popupU = document.getElementById('popupU'); if (popupU.style.display === 'none' || popupU.style.display === '') { popupU.style.display = 'block'; } else { popupU.style.display = 'none'; } }
     	    </script>
 
     <style>
@@ -301,6 +303,28 @@
             background-color: black;
             border-radius: 5px;
         }
+
+	    #popupU {
+            display: none;
+            position: absolute;
+            z-index: 99;
+            top: 0%;
+            left: 0%;
+            width:100%;
+            height:100%;
+            background-color: rgba(0, 0, 0, 0.608);
+        }
+        .innerpopupU {
+            display: block;
+            position: absolute;
+            z-index: 999;
+            top: 35%;
+            left: 10%;
+            width: 80%;
+            height: 20%;
+            background-color: black;
+            border-radius: 5px;
+        }
         .innerpopupE, flex, a {
             background-size: 80%
         }
@@ -319,6 +343,20 @@
             <a class="ton" target="_blank" style="background-image:url(chrome.png);" href="https://www.google.com/chrome/index.html"></a>
             <a class="ton" target="_blank" style="background-image:url(brave.jpg);" href="https://brave.com/"></a>
             <a class="ton" target="_blank" style="background-image:url(vivaldi.png);background-size: 150% 100%;" href="https://vivaldi.com/"></a>
+            <a class="ton" target="_blank" style="background-image:url(opera.png);" href="https://www.opera.com/"></a>
+            <a class="ton" target="_blank" style="background-image:url(tor.png);" href="https://www.torproject.org/"></a>
+            <a class="ton" target="_blank" style="background-image:url(edge.jpg);" href="https://www.microsoft.com/en-us/edge/"></a>
+            <a class="ton" target="_blank" style="background-image:url(chromium.jpg);" href="https://download-chromium.appspot.com/"></a>
+            </div>
+        </div>
+    </div>
+	 <div id="popupU" onclick="popupU()">
+        <div class="innerpopupU">
+            <div class="flex">
+            <a class="ton" target="_blank" style="background-image:url(firefox.jpg);" href="https://www.mozilla.org/"></a>
+            <a class="ton" target="_blank" style="background-image:url(chrome.png);" href="https://www.google.com/chrome/index.html"></a>
+            <a class="ton" target="_blank" style="background-image:url(brave.jpg);" href="https://brave.com/"></a>
+            <a class="ton" target="_blank" style="background-image:url(vivaldi.png);" href="https://vivaldi.com/"></a>
             <a class="ton" target="_blank" style="background-image:url(opera.png);" href="https://www.opera.com/"></a>
             <a class="ton" target="_blank" style="background-image:url(tor.png);" href="https://www.torproject.org/"></a>
             <a class="ton" target="_blank" style="background-image:url(edge.jpg);" href="https://www.microsoft.com/en-us/edge/"></a>
