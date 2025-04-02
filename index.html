@@ -164,6 +164,7 @@
         <a class="ton" target="_blank" style="background-image:url(steam.png);" href="https://store.steampowered.com/"></a>
         <a class="ton" target="_blank" style="background-image:url(epic.png); background-size: 150%;" href="https://www.epicgames.com/site/en-US/home"></a>
         <a class="ton" target="_blank" style="background-image:url(gog.png); background-size: 120%;" href="https://www.gog.com/galaxy"></a>
+	    <a class="ton" target="_blank" style="background-image:url(emul.png);" onclick="popupU()"></a>
         <a class="ton" target="_blank" style="background-image:url(bluestack.png);background-size: 80%" href="https://www.bluestacks.com/"></a>
         <a class="ton" target="_blank" style="background-image:url(retro.png); background-size: 200%;" href="https://www.retroarch.com/"></a>
         <a class="ton" target="_blank" style="background-image:url(overwolf.png); background-size: 250% 200%;" href="https://www.overwolf.com/"></a>
@@ -173,7 +174,7 @@
         <a class="ton" target="_blank" style="background-image:url(file.png);" onclick="popupF()"></a>
         <a class="ton" target="_blank" style="background-image:url(browser.png);" onclick="popupB()"></a>
         <a class="ton" target="_blank" style="background-image:url(vpanti.webp);" onclick="popupV()"></a>
-	<a class="ton" target="_blank" style="background-image:url(emul.png);" onclick="popupU()"></a>
+	<a class="ton" target="_blank" style="background-image:url(MicrosoftStore.svg);" onclick="popupS()"></a>
     </div>
 
     <div class="row">
@@ -215,6 +216,8 @@
                 function popupV() { var popupV = document.getElementById('popupV'); if (popupV.style.display === 'none' || popupV.style.display === '') { popupV.style.display = 'block'; } else { popupV.style.display = 'none'; } }
                 function popupF() { var popupF = document.getElementById('popupF'); if (popupF.style.display === 'none' || popupF.style.display === '') { popupF.style.display = 'block'; } else { popupF.style.display = 'none'; } }
                 function popupE() { var popupE = document.getElementById('popupE'); if (popupE.style.display === 'none' || popupE.style.display === '') { popupE.style.display = 'block'; } else { popupE.style.display = 'none'; } }
+		function popupS() { var popupS = document.getElementById('popupS'); if (popupS.style.display === 'none' || popupS.style.display === '') { popupS.style.display = 'block'; } else { popupS.style.display = 'none'; } }
+		
 		function popupU() { var popupU = document.getElementById('popupU'); if (popupU.style.display === 'none' || popupU.style.display === '') { popupU.style.display = 'block'; } else { popupU.style.display = 'none'; } }
     	    </script>
 
@@ -230,6 +233,27 @@
             background-color: rgba(0, 0, 0, 0.608);
         }
         .innerpopupB {
+            display: block;
+            position: absolute;
+            z-index: 999;
+            top: 35%;
+            left: 10%;
+            width: 80%;
+            height: 20%;
+            background-color: black;
+            border-radius: 5px;
+        }
+	    #popupS {
+            display: none;
+            position: absolute;
+            z-index: 99;
+            top: 0%;
+            left: 0%;
+            width:100%;
+            height:100%;
+            background-color: rgba(0, 0, 0, 0.608);
+        }
+        .innerpopupS {
             display: block;
             position: absolute;
             z-index: 999;
@@ -338,6 +362,20 @@
     </style>
     <div id="popupB" onclick="popupB()">
         <div class="innerpopupB">
+            <div class="flex">
+            <a class="ton" target="_blank" style="background-image:url(firefox.jpg);" href="https://www.mozilla.org/"></a>
+            <a class="ton" target="_blank" style="background-image:url(chrome.png);" href="https://www.google.com/chrome/index.html"></a>
+            <a class="ton" target="_blank" style="background-image:url(brave.jpg);" href="https://brave.com/"></a>
+            <a class="ton" target="_blank" style="background-image:url(vivaldi.png);background-size: 150% 100%;" href="https://vivaldi.com/"></a>
+            <a class="ton" target="_blank" style="background-image:url(opera.png);" href="https://www.opera.com/"></a>
+            <a class="ton" target="_blank" style="background-image:url(tor.png);" href="https://www.torproject.org/"></a>
+            <a class="ton" target="_blank" style="background-image:url(edge.jpg);" href="https://www.microsoft.com/en-us/edge/"></a>
+            <a class="ton" target="_blank" style="background-image:url(chromium.jpg);" href="https://download-chromium.appspot.com/"></a>
+            </div>
+        </div>
+    </div>
+	<div id="popupS" onclick="popupS()">
+        <div class="innerpopupS">
             <div class="flex">
             <a class="ton" target="_blank" style="background-image:url(firefox.jpg);" href="https://www.mozilla.org/"></a>
             <a class="ton" target="_blank" style="background-image:url(chrome.png);" href="https://www.google.com/chrome/index.html"></a>
